@@ -1,0 +1,9 @@
+image: eddymul/fprime-ref:latest
+project: fprime-ref
+target: fprime-ref
+cmds:
+  - cmd: /opt/fprime/Ref/build-artifacts/Linux/bin/Ref -a 127.0.0.1 -p 50000
+    network:
+      url: tcp://127.0.0.1:50000
+      timeout: 2
+      client: true
